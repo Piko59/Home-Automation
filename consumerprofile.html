@@ -9,6 +9,7 @@ session_start(); //Start new or resume existing session
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Home Automation</title>
     <link rel="stylesheet" href="consumerhome.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.css" rel="stylesheet" />
@@ -42,17 +43,71 @@ session_start(); //Start new or resume existing session
             <noscript><a href="http://www.hava.one">hava.one</a></noscript>
         </div>
     </div>  
-    <h1 style="font-size: 3rem;">WELCOME! HOME SWEET HOME</h1>
-    <div class="wrap" style="margin-top:+30px">
-        <div class="search">
-           <input type="text" class="searchTerm" placeholder="What are you looking for?">
-           <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
+    <h1 style="font-size: 3rem;text-decoration: none;">WELCOME! HOME SWEET HOME</h1>
+     <div style="display: flex;">
+      <div id="emergencycon1">
+        <h1>Emergency Calls</h1>
+        <p>You can make emergency calls.</p>
+        <div style="display: flex;justify-content: space-between;margin-top: 1rem;">
+          <h2 style="margin-left: 3rem;">Police</h2>
+          <button class="button-82-pushable" role="button">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+              Call
+            </span>
           </button>
+
         </div>
+        <div style="display: flex;justify-content: space-between;margin-top: 1rem;margin-bottom: 1rem;" >
+          <h2 style="margin-left: 3rem;">Ambulance</h2>
+          <button class="button-82-pushable" role="button">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+              Call
+            </span>
+          </button>
+
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <h2 style="margin-left: 3rem;">Fire Station</h2>
+          <button class="button-82-pushable" role="button">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+              Call
+            </span>
+          </button>
+
+        </div>
+      </div>
+      <div id="gascon2">
+        <h1>Gas Cooker</h1>
+        <p>You can turn gas cookers on or off.</p>
+        <div style="display: flex;">
+          <h2 style="text-align: left;">Gas Cooker 1</h2>
+          <input type="range" value="0">
+        </div>
+        <div style="display: flex;">
+          <h2 style="text-align: left;">Gas Cooker 2</h2>
+          <input type="range" value="0">
+        </div>
+        <div style="display: flex;">
+          <h2 style="text-align: left;">Gas Cooker 3</h2>
+          <input type="range" value="0">
+        </div>
+        <div style="display: flex;">
+          <h2 style="text-align: left;">Gas Cooker 4</h2>
+          <input type="range" value="0">
+        </div>
+      </div>
+
+      </div>
+
      </div>
-   <div id="rooms">
-    <div id="con1" >
+   <div style="display: flex;">
+    <div id="lightingcon1" >
         <h1>Lighting</h1>
         <p>You can control the lighting system.</p>
         <div id="rooms">
@@ -84,7 +139,7 @@ session_start(); //Start new or resume existing session
           </label>
         </div>
     </div>
-    <div id="con2">
+    <div id="aircon2">
         <h1>Air Conditioner</h1>
         <p style="margin-bottom: 10px;">You can decrease or increase the temperature of the house by controlling the air conditioner from here.</p>
         <div class="frame">
@@ -103,7 +158,7 @@ session_start(); //Start new or resume existing session
     </div>
    </div>
    <div style="display: flex;">
-    <div id="con1" >
+    <div id="eleccon1" >
         <h1>Electronic Devices</h1>
         <p>You can control all electronic devices in the house from here.</p>
         <div id="devices">
@@ -150,7 +205,7 @@ session_start(); //Start new or resume existing session
         </div>
 
     </div>
-    <div id="con2">
+    <div id="musiccon2">
         <h1>Music</h1>
         <p>You can load the playlist you want and listen to the song in the mode you want.</p>
         <h2 style="text-align: left;margin-top: 1rem;">Playlist:</h2>
@@ -183,7 +238,7 @@ session_start(); //Start new or resume existing session
     </div>
    </div>
    <div style="display: flex;">
-    <div id="con1" >
+    <div id="cctvcon1" >
         <h1>CCTV</h1>
         <p style="margin: 10px;">You can watch the camera recordings here.</p>
         <div style="margin-bottom: 30px;">
@@ -199,7 +254,7 @@ session_start(); //Start new or resume existing session
             <source src="./videos/cctv.mp4">
         </video>
     </div>
-    <div id="con2" >
+    <div id="doorcon2" >
         <h1>Door</h1>
         <p>You can control the door lock and watch the recording of the last door knock.</p>
         <div id="rooms" style="margin-bottom: 30px;margin-top: 10px;">
@@ -214,6 +269,70 @@ session_start(); //Start new or resume existing session
             <source src="./videos/door.mp4">
         </video>
     </div>
+   </div>
+   <div style="display: flex;width: 90%;">
+    <div id="ecocon1">
+      <h1>
+        Electricity Consumption
+      </h1>
+      <p>You can see the total electricity consumed per month and how much is consumed in which rooms.</p>
+      <figure class="pie-chart" style="border: 3px solid black;" >
+        <h2 style="font-size:medium;">Monthly electricity consumption by room</h2>
+        <figcaption>
+          Kitchen 38 kWh<span style="color:#4e79a7"></span><br>
+          Bedroom 23 kWh<span style="color:#f28e2c"></span><br>
+          Bathroom 16 kWh<span style="color:#e15759"></span><br>
+          Living Room 45 kWh<span style="color:#76b7b2"></span>
+        </figcaption>
+      </figure>
+      <p>You consumed 122 kWh electricity in total this month.</p>
+    </div>
+    <div id="watercon2">
+      <h1>
+        Water Consumption
+      </h1>
+      <p>You can see the total water consumed per month and how much is consumed in which rooms.</p>
+      <figure class="pie-chart" style="background:
+			radial-gradient(
+				circle closest-side,
+				transparent 66%,
+				white 0
+			),
+			conic-gradient(
+				#4e79a7 0,
+				#4e79a7 38.5%,
+				#e15759 0,
+				#e15759 100%
+		);border: 3px solid black;">
+        <h2 style="font-size:medium;">Monthly water consumption by room</h2>
+        <figcaption>
+          Kitchen 10m³<span style="color:#4e79a7"></span><br>
+          Bathroom 16m³<span style="color:#e15759"></span>
+        </figcaption>
+      </figure>
+      <p>You consumed 26m³ water in total this month.</p>
+    </div>
+   </div>
+   <div id="con1" style=" position: relative;margin: auto;width: 28%;border: none;">
+    <h1 style="margin-bottom: 0.5rem;text-decoration: none;">Contact Us</h1>
+    <ul class="wrapper">
+      <li class="icon facebook">
+        <span class="tooltip">Facebook</span>
+        <span><i class="fab fa-facebook-f"></i></span>
+      </li>
+      <li class="icon twitter">
+        <span class="tooltip">Twitter</span>
+        <span><i class="fab fa-twitter"></i></span>
+      </li>
+      <li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <span><i class="fab fa-instagram"></i></span>
+      </li>
+      <li class="icon youtube">
+        <span class="tooltip">Youtube</span>
+        <span><i class="fab fa-youtube"></i></span>
+      </li>
+    </ul>
    </div>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                                     
