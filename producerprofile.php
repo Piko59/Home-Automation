@@ -20,7 +20,7 @@
         <div>
             <img src="./images/profilephoto.png">
             <h2>ProducerName</h2>
-            <input type="submit" onclick="window.location.href='./producerlogin.html';" value="Log Out" style="margin: auto; background-color: #2196F3;color: white;border: 2px solid black;cursor: pointer;">
+            <input type="submit" onclick="window.location.href='./producerlogin.php';" value="Log Out" style="margin: auto; background-color: #2196F3;color: white;border: 2px solid black;cursor: pointer;">
         </div>
         <div id="weather">
             <iframe src="//www.hava.one/widget/widget_frame?id=323777&days=4&bcolor=2196F3&hbkcolor=2196F3&w=310" scrolling="no" frameborder="0" style="border: 3px solid black;overflow:hidden;height:200px;width:310px;" allowTransparency="true"></iframe>

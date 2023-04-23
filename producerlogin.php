@@ -7,20 +7,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="title">Consumer Login Page</div>
+      <div class="title">Producer Login <br> Page</div>
       <form action="#">
         <div class="field">
           <input type="text" required>
-          <label>Email Address</label>
+          <label>Username</label>
         </div>
         <div class="field">
           <input type="password" required>
           <label>Password</label>
         </div>
+       
         <div class="field">  
-          <input type="submit" onclick="window.location.href='./consumerprofile.html';" value="Login">
+          <input type="submit" onclick="window.location.href='./producerprofile.php';" value="Login">
         </div>
-        <div class="signup-link">Not a member? <a href="consumersignup.html">Signup now</a></div>
       </form>
     </div>
   </body>
