@@ -19,7 +19,7 @@
         </div>
        
         <div class="field">  
-          <input type="submit" onclick="window.location.href='./producerprofile.php';" value="Login">
+          <input type="submit" onclick="window.location.href='./producerprofile.html';" value="Login">
         </div>
       </form>
     </div>

@@ -18,7 +18,7 @@
           <label>Password</label>
         </div>
         <div class="field">  
-          <input type="submit" onclick="window.location.href='./consumerprofile.php';" value="Login">
+          <input type="submit" onclick="window.location.href='./consumerprofile.html';" value="Login">
         </div>
         <div class="signup-link">Not a member? <a href="consumersignup.php">Signup now</a></div>
       </form>

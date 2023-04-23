@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" onclick="window.location.href='./producerlogin.php';" value="Register">
+          <input type="submit" onclick="window.location.href='./consumerlogin.php';" value="Register">
         </div>
       </form>
     </div>
