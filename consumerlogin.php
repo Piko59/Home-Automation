@@ -18,7 +18,7 @@
           <label>Password</label>
         </div>
         <div class="field">  
-          <input type="submit" onclick="window.location.href='./consumerprofile.html';" value="Login">
+          <input type="submit" onclick="window.location.href='./consumerprofile.html';" value="Login" style = "background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);color: #fff;">
         </div>
         <div class="signup-link">Not a member? <a href="consumersignup.php">Signup now</a></div>
       </form>

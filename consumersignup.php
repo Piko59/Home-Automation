@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" onclick="window.location.href='./consumerlogin.php';" value="Register">
+          <input type="submit" onclick="window.location.href='./consumerlogin.php';" value="Register"style = "background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);color: #fff;">
         </div>
       </form>
     </div>
