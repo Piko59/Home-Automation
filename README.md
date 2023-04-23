@@ -1,5 +1,5 @@
-20220808621 Zehra Selin Karabıçak
-20200808058 Tahir Emre Semiz
+* 20220808621 Zehra Selin Karabıçak
+* 20200808058 Tahir Emre Semiz
 
 
 # Home-Automation
