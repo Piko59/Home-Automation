@@ -1158,3 +1158,14 @@ main {
 input[type='radio'] { 
   transform: scale(1.6); 
 }
+
+@media(max-width: 584px){
+  #emergencycon1,#lightingcon1{
+   max-width: 100%;
+ }
+ @media(max-width: 459px){
+  #emergencycon1,#lightingcon1{
+    flex-direction: column;
+  }
+}
+}
