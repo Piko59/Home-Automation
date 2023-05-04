@@ -138,6 +138,27 @@ width: 45%;
   left: 0px;
   opacity: 0.35;
 }
+#conecocon1{
+  position: relative;
+  border: 3px solid black;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 1rem;
+  width: 45%;
+}
+#conecocon1::before {    
+  content: "";
+  background-image: url(./images/eco.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.35;
+}
 #ecocon1{
   position: relative;
   border: 3px solid black;
@@ -233,6 +254,27 @@ width: 45%;
 #doorcon2::before {    
   content: "";
   background-image: url(./images/door.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.35;
+}
+#conwatercon2{
+  position: relative;
+  border: 3px solid black;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 1rem;
+  width: 45%;
+}
+#conwatercon2::before {    
+  content: "";
+  background-image: url(./images/water.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1168,33 +1210,59 @@ input[type='radio'] {
   }
   #emergencycon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #gascon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #lightingcon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #aircon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #eleccon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #musiccon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #cctvcon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #doorcon2{
+    width: 100%;
+    position: relative;
+    margin-left: 13%;
+  }
+  #conecocon1{
+    width: 100%;
+  }
+  #conwatercon2{
     width: 100%;
   }
   #ecocon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #watercon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #clockdate{
     display: none;
@@ -1224,33 +1292,59 @@ input[type='radio'] {
   }
   #emergencycon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #gascon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #lightingcon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #aircon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #eleccon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #musiccon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #cctvcon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #doorcon2{
+    width: 100%;
+    position: relative;
+    margin-left: 13%;
+  }
+  #conecocon1{
+    width: 100%;
+  }
+  #conwatercon2{
     width: 100%;
   }
   #ecocon1{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   #watercon2{
     width: 100%;
+    position: relative;
+    margin-left: 13%;
   }
   .pie-chart{
     position: relative;
