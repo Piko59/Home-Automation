@@ -1159,13 +1159,97 @@ input[type='radio'] {
   transform: scale(1.6); 
 }
 
-@media(max-width: 584px){
-  #emergencycon1,#lightingcon1{
-   max-width: 100%;
- }
- @media(max-width: 459px){
-  #emergencycon1,#lightingcon1{
+@media screen and (max-width: 768px) {
+  #generaldiv{
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width:95%;
+  }
+  #emergencycon1{
+    width: 100%;
+  }
+  #gascon2{
+    width: 100%;
+  }
+  #lightingcon1{
+    width: 100%;
+  }
+  #aircon2{
+    width: 100%;
+  }
+  #eleccon1{
+    width: 100%;
+  }
+  #musiccon2{
+    width: 100%;
+  }
+  #cctvcon1{
+    width: 100%;
+  }
+  #doorcon2{
+    width: 100%;
+  }
+  #ecocon1{
+    width: 100%;
+  }
+  #watercon2{
+    width: 100%;
+  }
+  #clockdate{
+    display: none;
+  }
+  #weather{
+    display: none;
+  }
+  .pie-chart{
+    position: relative;
+    margin: auto;
+  }
+  #user{
+    position: relative;
+    margin: auto;
   }
 }
+@media screen and (max-width: 1280px) {
+  #generaldiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:80%;
+  }
+  #emergencycon1{
+    width: 100%;
+  }
+  #gascon2{
+    width: 100%;
+  }
+  #lightingcon1{
+    width: 100%;
+  }
+  #aircon2{
+    width: 100%;
+  }
+  #eleccon1{
+    width: 100%;
+  }
+  #musiccon2{
+    width: 100%;
+  }
+  #cctvcon1{
+    width: 100%;
+  }
+  #doorcon2{
+    width: 100%;
+  }
+  #ecocon1{
+    width: 100%;
+  }
+  #watercon2{
+    width: 100%;
+  }
+  .pie-chart{
+    position: relative;
+    margin: auto;
+  }
 }
