@@ -1210,6 +1210,10 @@ input[type='radio'] {
     position: relative;
     margin: auto;
   }
+  #consumption-container{
+    position: relative;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 1280px) {
   #generaldiv{
@@ -1249,6 +1253,10 @@ input[type='radio'] {
     width: 100%;
   }
   .pie-chart{
+    position: relative;
+    margin: auto;
+  }
+  #consumption-container{
     position: relative;
     margin: auto;
   }
